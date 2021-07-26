@@ -24,6 +24,7 @@ module.exports = {
         ]
       }
     ],
+    base: '/blog/',
     sidebar: {
       '/docs/theme-reco/': [
         '',
