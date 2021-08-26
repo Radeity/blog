@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Radeity's TechBlog",
-  description: 'A simple notes when facing new technology .',
+  title: "Radeity's Blog",
+  description: '技术 生活 一点点小记录',
   dest: 'public',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -9,15 +9,11 @@ module.exports = {
   base: '/blog/',
   theme: 'reco',
   themeConfig: {
+    type: 'blog',
+    huawei: false,
     nav: [
       { text: 'Home', link: '/', icon: 'reco-home' },
       { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-      { text: 'Docs', 
-        icon: 'reco-message',
-        items: [
-          { text: 'vuepress-reco', link: '/docs/theme-reco/' }
-        ]
-      },
       { text: 'Contact', 
         icon: 'reco-message',
         items: [
@@ -46,12 +42,6 @@ module.exports = {
       }
     },
     friendLink: [
-      {
-        title: '午后南杂',
-        desc: 'Enjoy when you can, and endure when you must.',
-        email: '1156743527@qq.com',
-        link: 'https://www.recoluan.com'
-      },
       {
         title: 'vuepress-theme-reco',
         desc: 'A simple and beautiful vuepress Blog & Doc theme.',

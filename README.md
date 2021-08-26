@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+# heroText: vuepress-theme-reco
+# tagline: A simple and beautiful vuepress blog theme.
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
@@ -11,12 +11,15 @@ tagline: A simple and beautiful vuepress blog theme.
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
+heroText: null
+tagline: null
+bgImage: 'bg.png'
 bgImageStyle: {
   height: '450px'
 }
 isShowTitleInHome: false
-actionText: Guide
-actionLink: /views/other/guide
+# actionText: Guide
+# actionLink: /views/other/guide
 features:
 - title: Yesterday
   details: 开发一款看着开心、写着顺手的 vuepress 博客主题
