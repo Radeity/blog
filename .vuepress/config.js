@@ -22,13 +22,37 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/docs/theme-reco/': [
-        '',
-        'theme',
-        'plugin',
-        'api'
-      ]
-    },  
+        '/blogs/BigData/Scala/':[
+            {
+                title: '编程环境、变量、数据类型',
+                path: 'Scala_1.html'
+            },
+            {
+                title: '运算符、流程控制',
+                path: 'Scala_2.html'
+            },
+            {
+                title: '函数式编程',
+                path: 'Scala_3.html'
+            },
+            {
+                title: '面向对象',
+                path: 'Scala_4.html'
+            },
+            {
+                title: '序列 -- 数组、列表',
+                path: 'Scala_5.html'
+            },
+            {
+                title: 'Set、Map、其它集合',
+                path: 'Scala_6.html'
+            },
+            {
+                title: '模式匹配',
+                path: 'Scala_7.html'
+            }
+        ]
+    },
     type: 'blog',
     // 博客设置
     blogConfig: {

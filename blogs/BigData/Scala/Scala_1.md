@@ -70,7 +70,7 @@ HelloScala$.class HelloScala.class  HelloScala.scala
 
 4. 新建一个Scala类Student.scala
 
-   ```Scala
+   ```scala
    class Student(name: String, age: Int)  {
      def printInfo(): Unit = {
        println(name + " " + age + "   " + Student.school)
@@ -94,7 +94,7 @@ HelloScala$.class HelloScala.class  HelloScala.scala
 
 Student$.class：
 
-   ```Java
+   ```java
    public final class Student$ {
      public static Student$ MODULE$;
      
@@ -121,7 +121,7 @@ Student$.class：
 Student.class：
 
 
-   ```Java
+   ```java
    public class Student {
      private final String name;
      
@@ -155,7 +155,7 @@ Student.class：
 
 能用常量的地方不用变量（函数式编程思想）
 
-```Scala
+```scala
 object Test_Variable {
   def main(args: Array[String]): Unit = {
     var a: Int = 10
@@ -181,13 +181,13 @@ object Test_Variable {
 
 将16赋值给b1后会被编译器判别为Int类型，由于val修饰了b1为常量，对b1的值进行修改会报错；val修饰的对象，其中的属性可以改变，但不可以去重新new指向新的地址，集合同理。这里发现上面代码中获取alice的age时报错，原因是之前Student类中并没有声明age属于该类，回顾Student类的写法：
 
-```Scala
+```scala
 class Student(name: String, age: Int)  {...}
 ```
 
 它的含义是将name和age作为构造函数的形参传入，需要在age前加var或val声明为成员变量或成员常量，成员变量可以对alice.age赋其它值进行改变，常量则不可以。修改后的Student类编译生成的字节码文件反编译如下，发现多了访问和修改age的方法。
 
-```Java
+```java
 public class Student {
   private final String name;
   
@@ -228,7 +228,7 @@ Scala字符串输出有三种方式
 - 类似C语言printf，用%作变量的占位（%s%d等）
 - 类似Shell脚本进行插值通过$取变量值
 
-```Scala
+```scala
 object Test_String {
   def main(args: Array[String]): Unit = {
     val name: String = "aaron"
@@ -340,7 +340,7 @@ Exception in thread "main" java.lang.NullPointerException
 
 (6) 数值类型和String类型相互转换：
 
-```Scala
+```scala
 // (1) 数值转String
 val n: Int = 27
 val s: String = n + ""
